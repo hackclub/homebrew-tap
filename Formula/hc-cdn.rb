@@ -1,30 +1,30 @@
 class HcCdn < Formula
   desc "CLI for the Hack Club CDN gateway"
   homepage "https://github.com/hackclub/hc-cdn-tools"
-  version "0.1.1"
+  version "0.1.2"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/hackclub/homebrew-tap/releases/download/hc-cdn-v#{version}/hc-cdn_#{version}_darwin_arm64.tar.gz"
-      sha256 "f0a34a6c6b166396e5f60d655c029e70b0350ba3f00bb4b3d11963e023c0a80f"
+      sha256 "991d3c8a9e81e65cd598692bbbc83ec7af0951c06d9a87428f94509fad0e54bc"
     end
 
     if Hardware::CPU.intel?
       url "https://github.com/hackclub/homebrew-tap/releases/download/hc-cdn-v#{version}/hc-cdn_#{version}_darwin_amd64.tar.gz"
-      sha256 "067a7fe9b2b2ca922d575e55413d842b74f1c71ae023ab4a59871b0176ad59e7"
+      sha256 "c81280432ffbcbcdc3a6f76a8c79fa034b3f1e5d328f81e1a17cb70bfdf941cf"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
       url "https://github.com/hackclub/homebrew-tap/releases/download/hc-cdn-v#{version}/hc-cdn_#{version}_linux_arm64.tar.gz"
-      sha256 "c28a26c2cceb3a0ac9a0e7b7c31580a8cbbc1ef7b6b4f512cbf004f50da8228f"
+      sha256 "f4965b5de833d3c964f832902b0de567e9c5892eaab000872a2508b8294d24b3"
     end
 
     if Hardware::CPU.intel?
       url "https://github.com/hackclub/homebrew-tap/releases/download/hc-cdn-v#{version}/hc-cdn_#{version}_linux_amd64.tar.gz"
-      sha256 "bb899c784cb34d1cb3567618dab9911cce48d3ece43a9f07c55ea8580ee822d5"
+      sha256 "5d3b69b18cc60564d638cbf91bd37a1ffc61e5972540ccdd5b2868c6473b4a59"
     end
   end
 
